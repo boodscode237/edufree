@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to EduFree</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4ff, #e0eaff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #003399, #3366cc);
+      color: white;
+      animation: fadeInDown 1s ease-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #003399;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #003399;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #002080;
+    }
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .fadeIn {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to EduFree</h1>
+    <p>Your trusted partner for studying in Russia</p>
+  </header>
+
+  <section class="fadeIn">
+    <h2>What We Do</h2>
+    <p>At EduFree, we specialize in guiding international students through every step of their journey to study in Russia. From helping you choose a university to preparing your application, we're with you at every step:</p>
+    <ul>
+      <li>Connect students with top Russian universities</li>
+      <li>Guide you in building your dossier and submitting strong applications</li>
+      <li>Support you through the entire scholarship process</li>
+    </ul>
+    <p>Our dedicated team has helped students from around the world realize their dream of studying abroad. We are proud to have a <strong>100% success rate for Master's and PhD scholarships</strong>.</p>
+    <a class="button" href="public/index.html">Apply Now</a>
+  </section>
+
+  <section class="fadeIn">
+    <h2>20 Reasons to Study in Russia</h2>
+    <ul>
+      <li>World-class universities and research facilities</li>
+      <li>Affordable tuition fees and living costs</li>
+      <li>Scholarship opportunities from the Russian government</li>
+      <li>Internationally recognized degrees</li>
+      <li>Diverse culture and vibrant student life</li>
+      <li>Opportunities to work while studying</li>
+      <li>English-taught programs available</li>
+      <li>Strong academic support</li>
+      <li>Access to modern technology and innovation</li>
+      <li>Chance to learn Russian language and culture</li>
+      <li>Welcoming environment for international students</li>
+      <li>Rich history and heritage</li>
+      <li>Well-connected transportation systems</li>
+      <li>Beautiful cities and landscapes</li>
+      <li>Participation in international conferences</li>
+      <li>Affordable accommodation</li>
+      <li>High quality of education in engineering and science</li>
+      <li>Exposure to a global community of students</li>
+      <li>Hands-on practical training and internships</li>
+      <li>Post-study work opportunities and career growth</li>
+    </ul>
+  </section>
+</body>
+</html>
