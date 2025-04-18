@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduFree Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>EduFree Dashboard</h1>
+      <p>All submitted applications</p>
+    </header>
+    <main>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Last Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>Level</th>
+            <th>Profile</th>
+            <th>Topic</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
