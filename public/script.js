@@ -158,15 +158,16 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     console.log("Sending data:", data);
-
-    const res = await fetch("/submit", {
+    const backendUrl = "https://edufree-backend.onrender.com";
+    
+    const res = await fetch(`${backendUrl}/submit`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
 
     if (res.ok) {
-      const contact = await fetch("/contacts").then((r) => r.json());
+      const contact = await fetch(`${backendUrl}/contacts`).then((r) => r.json());
 
       contactDiv.style.display = "block";
       document.getElementById(
