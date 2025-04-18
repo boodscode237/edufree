@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scholarship Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Scholarship Application</h1>
+
+      <form id="application-form">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" required />
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required />
+
+        <label for="education-level">Level of Education:</label>
+        <select id="education-level" required>
+          <option value="">Select...</option>
+          <option value="bachelor">Bachelor’s</option>
+          <option value="master">Master’s</option>
+          <option value="doctorate">Doctoral</option>
+        </select>
+
+        <label for="profile">Profile:</label>
+        <select id="profile" required>
+          <option value="">Select...</option>
+        </select>
+
+        <label for="topic">Topic:</label>
+        <select id="topic" required>
+          <option value="">Select...</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="contact" style="display: none; margin-top: 20px">
+        <h3>Thanks for submitting!</h3>
+        <p id="whatsapp"></p>
+        <p id="telegram"></p>
+        <p id="email"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
